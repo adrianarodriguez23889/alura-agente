@@ -19,7 +19,15 @@ El agente permite a los miembros del equipo realizar preguntas en lenguaje natur
 
 ---
 
-## 📂 Archivos de Conocimiento Soportados
+## 📁 Estrategia de Curaduría y Gobernanza de Datos
 
-1. `Politicas_Tienda.pdf`: Documentación sobre envíos, garantías y devoluciones.
-2. `productos_inventario.csv`: Listado de catálogo, precios y stock disponible.
+Para garantizar la calidad de las respuestas del agente (*evitando información desactualizada o duplicada*), los documentos se organizaron bajo la siguiente estructura corporativa en el directorio `/data`:
+
+| Documento | Categoría / Dominio | Formato | Ámbito de Aplicación |
+| :--- | :--- | :--- | :--- |
+| `Politicas_Tienda.pdf` | Operacional / Atención al Cliente | PDF | Tiempos de envío, devoluciones y garantías. |
+| `productos_inventario.csv` | Comercial / Inventario | CSV | Precios, stock disponible y especificaciones de catálogo. |
+
+### 🛠️ Ingesta e Integración
+- **Modo Actual:** Carga local estructurada (Local Directory Upload) desde el directorio `/data`.
+- **Acceso:** Acceso de lectura global para todos los colaboradores de la organización.
